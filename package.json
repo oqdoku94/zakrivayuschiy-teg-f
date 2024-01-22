@@ -1,0 +1,20 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "description": "https://github.com/oqdoku94/zakrivayuschiy-teg-f.git",
+  "main": "index.js",
+  "scripts": {
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint \"**/*.css\"",
+    "lintfix": "stylelint \"**/*.css\" --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.1.1",
+    "stylelint": "^16.0.2"
+  }
+}
