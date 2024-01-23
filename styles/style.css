@@ -98,7 +98,7 @@
   transform: scaleX(1);
 }
 
-.theme-menu__button:focus
+.theme-menu__button:focus,
 .theme-menu__item:focus {
   outline: none;
   border: none;
