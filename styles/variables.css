@@ -11,4 +11,5 @@
         repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --content-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
     --card-header-font-weight: 700;
+    --like-button-color: #fff;
 }
