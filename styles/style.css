@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font-family, "Inter", sans-serif);
+  font-family: var(--main-font-family, 'Inter', sans-serif);
   font-variation-settings: 'wght' var(--main-font-weight, 400);
   background-color: var(--background-color, #fff);
   color: var(--accent-color, #000);
@@ -40,10 +40,13 @@
   border: 2px solid currentColor;
   display: grid;
   gap: 25px;
-  font-family: var(--accent-font-family, "PressStart2P", sans-serif);
+  font-family: var(--accent-font-family, 'PressStart2P', sans-serif);
   line-height: normal;
   text-transform: uppercase;
-  inline-size: var(--content-width, clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem));
+  inline-size: var(
+    --content-width,
+    clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem)
+  );
   justify-items: center;
   justify-content: center;
 }
@@ -140,12 +143,16 @@
 /* Конец шапки */
 
 /* Начало main */
+
 .main {
   display: grid;
   justify-items: center;
   justify-content: center;
   gap: 50px;
-  inline-size: var(--content-width, clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem));
+  inline-size: var(
+    --content-width,
+    clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem)
+  );
 }
 
 .card {
@@ -158,7 +165,10 @@
   padding: 5px 10px;
   font-size: 18px;
   font-variation-settings: 'wght' var(--card-header-font-weight, 700);
-  inline-size: var(--content-width, clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem));
+  inline-size: var(
+    --content-width,
+    clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem)
+  );
 }
 
 .card__image {
@@ -172,7 +182,7 @@
   position: absolute;
   inset-block-start: 20px;
   inset-inline-end: 11px;
-  font-family: var(--accent-font-family, "PressStart2P", sans-serif);
+  font-family: var(--accent-font-family, 'PressStart2P', sans-serif);
   font-size: 14px;
   text-transform: uppercase;
   mix-blend-mode: hard-light;
@@ -180,9 +190,14 @@
   text-shadow: 0 0 1px var(--background-color, #fff);
 }
 
-@supports((text-stroke: 1px var(--background-color, #fff)) or (-webkit-text-stroke: 1px var(--background-color, #fff))) {
+@supports (
+  (text-stroke: 1px var(--background-color, #fff)) or
+    (-webkit-text-stroke: 1px var(--background-color, #fff))
+) {
   .card__image-title {
     -webkit-text-stroke: 1px var(--background-color, #fff);
+    /* prettier-ignore */
+    /* stylelint-disable */
     text-stroke: 1px var(--background-color, #fff);
     text-shadow: none;
   }
@@ -203,7 +218,10 @@
   display: grid;
   gap: 27px;
   padding: 25px;
-  inline-size: var(--content-width, clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem));
+  inline-size: var(
+    --content-width,
+    clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem)
+  );
 }
 
 .card__content-text {
@@ -224,7 +242,7 @@
   background: none;
   inline-size: 130px;
   block-size: 38px;
-  font-family: var(--accent-font-family, "PressStart2P", sans-serif);
+  font-family: var(--accent-font-family, 'PressStart2P', sans-serif);
   font-size: 14px;
   transition: box-shadow 0.3s ease;
   position: relative;
@@ -266,7 +284,6 @@
 .card__icon-button {
   padding: 0;
   background: none;
-  border: none;
   border: 2px solid transparent;
   transition: border 0.3s ease;
 }
@@ -284,7 +301,7 @@
 }
 
 .like-icon .core {
-  fill: var(--background-color, #ffffff);
+  fill: var(--background-color, #fff);
   transition: fill 0.3s linear 0.03s;
 }
 
@@ -294,37 +311,41 @@
 }
 
 .like-icon:active .core {
-  fill: var(--like-background-color, #F00);
+  fill: var(--like-background-color, #f00);
   transition: fill 0.3s linear;
 }
 
 .like-icon .main-body {
-  fill: var(--background-color, #ffffff);
+  fill: var(--background-color, #fff);
   transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
   transition: fill 0.3s linear 0.05s;
-  fill: var(--contour-like-color, #000000);
+  fill: var(--contour-like-color, #000);
 }
 
 .like-icon:active .main-body {
   transition: fill 0.3s linear 0.05s;
-  fill: var(--like-background-color, #F00);
+  fill: var(--like-background-color, #f00);
 }
 
 .like-icon.is-liked .core {
-  fill: var(--like-background-color, #F00);
+  fill: var(--like-background-color, #f00);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--like-background-color, #F00);
+  fill: var(--like-background-color, #f00);
   transition: fill 0.3s linear 0.05s;
 }
 
+.contour {
+  transition: fill 0.1s linear;
+}
+
 .like-icon.is-liked .contour {
-  fill: var(--like-background-color, #F00);
+  fill: var(--like-background-color, #f00);
   transition: fill 0.3s linear 0.06s;
 }
 
@@ -335,10 +356,6 @@
 
 .like-icon.is-liked .sparks {
   animation: sparks-opacity-animation 0.3s ease-in 0.3s 1 alternate;
-}
-
-.contour {
-  transition: fill 0.1s linear;
 }
 
 @keyframes heart-scale-animation {
