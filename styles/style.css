@@ -24,4 +24,37 @@
   background-image: var(--background-image, none);
   background-attachment: fixed;
   background-size: cover;
+  line-height: 21px;
+}
+
+.header {
+  padding-block-start: 120px;
+  padding-block-end: 25px;
+  display: grid;
+  gap: 25px;
+}
+
+.header__title {
+  display: grid;
+  gap: 20px;
+  line-height: normal;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title-decoration {
+  font-size: 49px;
+}
+
+.header__title-text {
+  font-size: 14px;
+}
+
+.accent-text {
+  font-family: var(--accent-font-family, "PressStart2P", sans-serif);
+}
+
+.colored-background {
+  background-color: var(--background-color, #fff);
 }
