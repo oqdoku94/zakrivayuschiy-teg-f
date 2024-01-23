@@ -15,6 +15,7 @@
         repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --card-header-font-weight: 700;
     --like-button-color: #fff;
+    --contour-like-color: #000;
 }
 
 :root.theme-dark {
@@ -27,6 +28,7 @@
         repeating-linear-gradient(to bottom, #007f0c 0.01%, #004306);
     --card-header-font-weight: 785;
     --like-button-color: var(--accent-color, #00cc14);
+    --contour-like-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,5 +42,6 @@
             repeating-linear-gradient(to bottom, #007f0c 0.01%, #004306);
         --card-header-font-weight: 785;
         --like-button-color: var(--accent-color, #00cc14);
+        --contour-like-color: #00cc14;
     }
 }
