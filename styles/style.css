@@ -339,3 +339,31 @@
 .dialog-button:focus {
   outline: none;
 }
+
+.blur-filter {
+  filter: blur(15px);
+}
+
+.sepia-filter {
+  filter: sepia(85%);
+}
+
+.invert-filter {
+  filter: invert(0.85);
+}
+
+.brightness-filter {
+  filter: brightness(200%);
+}
+
+.contrast-filter {
+  filter: contrast(140%);
+}
+
+.grayscale-filter {
+  filter: grayscale(0.8);
+}
+
+.multiple-filter {
+  filter: invert(0.7) hue-rotate(-90deg) saturate(140%);
+}
