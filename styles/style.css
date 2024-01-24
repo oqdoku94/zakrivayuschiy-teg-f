@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font-family, 'Inter', sans-serif);
+  font-family: var(--main-font-family, sans-serif);
   font-variation-settings: 'wght' var(--main-font-weight, 400);
   background-color: var(--background-color, #fff);
   color: var(--accent-color, #000);
@@ -36,11 +36,11 @@
   margin-block-start: 100px;
   margin-block-end: 100px;
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-  padding-block-end: 25px;
+  padding-block-end: 23px;
   border: 2px solid currentColor;
   display: grid;
-  gap: 25px;
-  font-family: var(--accent-font-family, 'PressStart2P', sans-serif);
+  gap: 20px;
+  font-family: var(--accent-font-family, sans-serif);
   line-height: normal;
   text-transform: uppercase;
   justify-items: center;
@@ -71,15 +71,20 @@
 }
 
 .header__title-text {
+  padding-block-end: 5px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-align: center;
 }
 
 .theme-menu__list {
   display: grid;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
   padding-inline-start: 20px;
+}
+
+.theme-menu__item:focus {
+  outline: none;
 }
 
 .theme-menu__button {
@@ -92,7 +97,7 @@
 }
 
 .theme-menu__button::after {
-  position: absolute;
+  display: block;
   inset-block-end: 0;
   inset-inline-start: 0;
   content: '';
@@ -109,6 +114,7 @@
   content: '▶';
   position: absolute;
   inset-inline-start: -17px;
+  inset-block-start: 0;
 }
 
 .theme-menu__button:disabled {
@@ -149,6 +155,8 @@
   border-block: 1px solid currentColor;
   box-sizing: border-box;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .card__image-title {
@@ -156,7 +164,7 @@
   position: absolute;
   inset-block-start: 20px;
   inset-inline-end: clamp(0.6875rem, 0.3791rem + 1.3158vw, 1.5625rem);
-  font-family: var(--accent-font-family, 'PressStart2P', sans-serif);
+  font-family: var(--accent-font-family, sans-serif);
   font-size: 14px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
@@ -233,7 +241,7 @@
 .button__text {
   font-size: 14px;
   line-height: 90%;
-  font-family: var(--accent-font-family, 'PressStart2P', sans-serif);
+  font-family: var(--accent-font-family, sans-serif);
 }
 
 .card__icon-button {
@@ -320,7 +328,7 @@
 
 .dialog-text {
   line-height: 150%;
-  font-family: var(--accent-font-family, 'PressStart2P', sans-serif);
+  font-family: var(--accent-font-family, sans-serif);
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -330,7 +338,7 @@
   background: var(--background-color, #fff);
   border: 2px solid currentColor;
   line-height: 90%;
-  font-family: var(--accent-font-family, 'PressStart2P', sans-serif);
+  font-family: var(--accent-font-family, sans-serif);
   font-size: 14px;
   text-transform: uppercase;
   padding-inline: 17px;
