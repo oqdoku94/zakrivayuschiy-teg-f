@@ -303,6 +303,10 @@
   max-inline-size: 357px;
 }
 
+.footer__save-dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
 .footer__save-dialog[open]:focus {
   outline: none;
 }
